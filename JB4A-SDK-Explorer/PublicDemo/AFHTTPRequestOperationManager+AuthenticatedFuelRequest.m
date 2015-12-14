@@ -38,7 +38,7 @@
 #import "AFHTTPRequestOperationManager+AuthenticatedFuelRequest.h"
 #import "PUDUtility.h"
 
-@implementation AFHTTPRequestOperationManager (AuthenticatedFuelRequest)
+@implementation AFHTTPSessionManager (AuthenticatedFuelRequest)
 
 /**
  The key that is used to store the access token inside NSUserDefaults
@@ -50,58 +50,44 @@ NSString *fuelRequestAccessTokenKey = @"AuthenticatedFuelRequest_AccessToken";
  */
 NSString *accessTokenResponseObjectKey = @"accessToken";
 
-- (AFHTTPRequestOperation *)fuelRequestWithMethod:(NSString *)method
-                                  numberOfRetries:(NSInteger)numberOfRetries
-                                        URLString:(NSString *)URLString
-                                       parameters:(id)parameters
-                                          success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-                                          failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
+- (NSURLSessionTask *)fuelRequestWithMethod:(NSString *)method
+                            numberOfRetries:(NSInteger)numberOfRetries
+                                  URLString:(NSString *)URLString
+                                 parameters:(id)parameters
+                                    success:(void (^)(NSURLSessionTask *operation, id responseObject))success
+                                    failure:(void (^)(NSURLSessionTask *operation, NSError *error))failure {
     
     __block NSInteger blockNumberOfRetries = numberOfRetries;
     
     // retrieve the access token from user defaults
-    __block NSString *accessToken = [[NSUserDefaults standardUserDefaults] valueForKey:fuelRequestAccessTokenKey];
+    __block NSString *accessToken = [[NSUserDefaults standardUserDefaults] objectForKey:fuelRequestAccessTokenKey];
     
     if (accessToken) {
         NSString *authenticatedURLString = [URLString stringByAppendingFormat:@"?access_token=%@", accessToken];
-        
-        NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:method
-                                                                       URLString:[[NSURL URLWithString:authenticatedURLString
-                                                                                         relativeToURL:self.baseURL] absoluteString]
-                                                                      parameters:parameters
-                                                                           error:nil];
-        
-        NSLog(@"%@", [[NSString alloc] initWithData:[request HTTPBody] encoding:NSUTF8StringEncoding]);
-        
-        AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request
-                                                                          success:success
-                                                                          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                                                              if (blockNumberOfRetries <=0) {
-                                                                                  if (failure) {
-                                                                                      failure(operation, error);
-                                                                                      return;
-                                                                                  }
-                                                                              }
-                                                                              else {
-                                                                                  AFHTTPRequestOperation *innerOperation = [self getAccessTokenWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                                                                      [self fuelRequestWithMethod:method
-                                                                                                  numberOfRetries:--blockNumberOfRetries
-                                                                                                        URLString:URLString
-                                                                                                       parameters:parameters
-                                                                                                          success:success
-                                                                                                          failure:failure];
-                                                                                  } failure:failure];
-                                                                                  
-                                                                                  [self.operationQueue addOperation:innerOperation];
-                                                                              }
-                                                                          }];
-        
-        [self.operationQueue addOperation:operation];
-        
-        return operation;
-    }
-    else {
-        AFHTTPRequestOperation *operation = [self getAccessTokenWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        return [self POST:[[NSURL URLWithString:authenticatedURLString
+                                  relativeToURL:self.baseURL] absoluteString]
+               parameters:parameters
+                 progress:nil
+                  success:success
+                  failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                      if (blockNumberOfRetries <=0) {
+                          if (failure) {
+                              failure(task, error);
+                              return;
+                          }
+                      }
+                      else {
+                          [self getAccessTokenWithSuccess:^(NSURLSessionTask *operation, id responseObject) {
+                              [self fuelRequestWithMethod:method
+                                          numberOfRetries:--blockNumberOfRetries
+                                                URLString:URLString
+                                               parameters:parameters
+                                                  success:success
+                                                  failure:failure];
+                          } failure:failure];
+                      }}];
+    } else {
+        return [self getAccessTokenWithSuccess:^(NSURLSessionTask *operation, id responseObject) {
             [self fuelRequestWithMethod:method
                         numberOfRetries:blockNumberOfRetries
                               URLString:URLString
@@ -109,41 +95,29 @@ NSString *accessTokenResponseObjectKey = @"accessToken";
                                 success:success
                                 failure:failure];
         } failure:failure];
-        
-        [self.operationQueue addOperation:operation];
-        
-        return operation;
     }
 }
 
 #pragma mark - private methods
 
-- (AFHTTPRequestOperation *)getAccessTokenWithSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-                                              failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
+- (NSURLSessionTask *)getAccessTokenWithSuccess:(void (^)(NSURLSessionTask *operation, id responseObject))success
+                                              failure:(void (^)(NSURLSessionTask *operation, NSError *error))failure {
     
     NSLog(@"== GETTING NEW ACCESS TOKEN ==");
     
     NSDictionary *parameters = @{ @"clientId" : [PUDUtility clientID], @"clientSecret" : [PUDUtility clientSecret] };
     NSString *URLString = [PUDUtility fuelAccessTokenRoute];
-    
-    NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:@"POST"
-                                                                   URLString:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString]
-                                                                  parameters:parameters
-                                                                       error:nil];
-    
-    AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    return [self POST:[[NSURL URLWithString:URLString relativeToURL:self.baseURL] absoluteString] parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         // save the access token to user defaults
         NSString *accessToken = responseObject[accessTokenResponseObjectKey];
-        [[NSUserDefaults standardUserDefaults] setValue:accessToken forKey:fuelRequestAccessTokenKey];
+        [[NSUserDefaults standardUserDefaults] setObject:accessToken forKey:fuelRequestAccessTokenKey];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
         // call the success block
         if (success) {
-            success(operation, success);
+            success(task, success);
         }
     } failure:failure];
-    
-    return operation;
 }
 
 @end

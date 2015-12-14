@@ -35,12 +35,12 @@
 //  Copyright © 2015 Salesforce Marketing Cloud. All rights reserved.
 //
 
-#import "AFHTTPRequestOperationManager.h"
+#import "AFHTTPSessionManager.h"
 
 /**
  *  This is not required for the SDK to work properly. This is used to make the Fuel api calls that initiate message sends directly from a device
  */
-@interface AFHTTPRequestOperationManager (AuthenticatedFuelRequest)
+@interface AFHTTPSessionManager (AuthenticatedFuelRequest)
 
 /**
  Makes an authenticated fuel request by using the credentials that are present in a file named settings.plist. If the file is not present and this method is called an exception will occur. Using the credentials, this will request an access token from the Fuel service and save the access token into NSUSerDefaults for use at a later time. If an access token is already present when this is called then the request specified will be attempted using the access token that is already saved in NSUserDefaults. If the request attempt fails, this method will retrieve a new access token and attempt the request again.
@@ -52,11 +52,10 @@
  @param success The block to be called if the request succeeded.
  @param failure The block to be called if the request failed.
  */
-- (AFHTTPRequestOperation *)fuelRequestWithMethod:(NSString *)method
-                                  numberOfRetries:(NSInteger)numberOfRetries
-                                        URLString:(NSString *)URLString
-                                       parameters:(id)parameters
-                                          success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-                                          failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
-
+- (NSURLSessionTask *)fuelRequestWithMethod:(NSString *)method
+                            numberOfRetries:(NSInteger)numberOfRetries
+                                  URLString:(NSString *)URLString
+                                 parameters:(id)parameters
+                                    success:(void (^)(NSURLSessionTask *operation, id responseObject))success
+                                    failure:(void (^)(NSURLSessionTask *operation, NSError *error))failure;
 @end

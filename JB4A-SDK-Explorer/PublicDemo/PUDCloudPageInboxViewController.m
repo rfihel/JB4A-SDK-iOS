@@ -69,10 +69,8 @@
     self.inboxTableView.dataSource = self.dataSource;
     [self.dataSource setInboxTableView:self.inboxTableView];
     
-    if (!IOS_PRE_7_0) {
-        self.inboxTableView.separatorInset = UIEdgeInsetsMake(0, 26, 0, 0);
-        self.listFilterSegmentedControl.tintColor = [UIColor whiteColor];
-    }
+    self.inboxTableView.separatorInset = UIEdgeInsetsMake(0, 26, 0, 0);
+    self.listFilterSegmentedControl.tintColor = [UIColor whiteColor];
     
     // set up the segmented control
     self.segmentContainerView.backgroundColor = [UIColor colorWithRed:0.0/255.0

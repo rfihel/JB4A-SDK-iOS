@@ -53,9 +53,6 @@
      *  Handle layout differences between iOS 6 and 7
      */
     NSUInteger heightDifference = 49;
-    if (IOS_PRE_7_0) {
-        heightDifference = 0;
-    }
     
     // Create page view controller
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
