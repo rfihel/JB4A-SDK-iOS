@@ -35,10 +35,6 @@
 //  Copyright © 2015 Salesforce Marketing Cloud. All rights reserved.
 //
 
-#pragma mark - Defines
-
-#define IOS_PRE_7_0 (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1)
-
 #pragma mark - TypeDefs
 typedef CGFloat (^CellHeightBlock)();
 typedef void (^ConfigureCellBlock)(UITableViewCell *);

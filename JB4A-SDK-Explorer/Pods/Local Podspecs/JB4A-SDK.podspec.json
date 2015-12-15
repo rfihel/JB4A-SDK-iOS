@@ -1,0 +1,24 @@
+{
+  "name": "JB4A-SDK",
+  "version": "4.0.3",
+  "summary": "Salesforce Marketing Cloud Journey Builder for Apps iOS SDK",
+  "description": "Journey Builder for Apps provides everything you need to connect your apps, products, and spaces to customer journeys — nurturing customers into deeply engaged, long-term fans. Map your complete strategy, and then execute your plan and engage users across channels with in-app messaging, in-product messaging, email, mobile, social, ads, and the web.",
+  "homepage": "http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/",
+  "license": "BSD",
+  "authors": {
+    "Roman Figel": "roman.figel@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/rfihel/JB4A-SDK-iOS.git",
+    "tag": "JB4A-SDK-iOS-v4.0.3"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "JB4A-SDK/*.h",
+  "public_header_files": "JB4A-SDK/*.h",
+  "ios": {
+    "vendored_libraries": "JB4A-SDK/libJB4ASDK.a"
+  }
+}

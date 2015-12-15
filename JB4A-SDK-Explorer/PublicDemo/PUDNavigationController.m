@@ -47,12 +47,8 @@
 {
     [super viewDidLoad];
     
-    if (IOS_PRE_7_0) {
-        self.navigationBar.tintColor = [UIColor etPrimaryOrange];
-    } else {
-        self.navigationBar.barTintColor = [UIColor etPrimaryOrange];
-        self.navigationBar.tintColor = [UIColor whiteColor];
-    }
+    self.navigationBar.barTintColor = [UIColor etPrimaryOrange];
+    self.navigationBar.tintColor = [UIColor whiteColor];
 
     [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 }

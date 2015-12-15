@@ -50,14 +50,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // this is needed due to supporting both iOS 6 and 7
-    if (!IOS_PRE_7_0) {
-        self.webView.scrollView.contentInset = self.webView.scrollView.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 0, 0);
-    }
     
     // set up the web view
     self.webView.backgroundColor = [UIColor clearColor];
-    [self.webView loadData:[self.html dataUsingEncoding:NSUTF8StringEncoding] MIMEType:nil textEncodingName:nil baseURL:nil];
+    [self.webView loadData:[self.html dataUsingEncoding:NSUTF8StringEncoding] MIMEType:@"text/html" textEncodingName:@"utf-8" baseURL:[NSURL URLWithString:@"about:blank"]];
 }
 
 #pragma mark - webview delegate

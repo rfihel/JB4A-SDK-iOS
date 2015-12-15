@@ -225,9 +225,7 @@
         textField.hidden = NO;
         
         // this is needed in order to hide the text indicator on the text field
-        if (!IOS_PRE_7_0) {
-            textField.tintColor = [UIColor whiteColor];
-        }
+        textField.tintColor = [UIColor whiteColor];
         
         // set up possible options
         NSString *defaultSound = @"Default Sound";
@@ -355,9 +353,7 @@
         textField.hidden = NO;
         
         // this is needed in order to hide the text indicator on the text field
-        if (!IOS_PRE_7_0) {
-            textField.tintColor = [UIColor whiteColor];
-        }
+        textField.tintColor = [UIColor whiteColor];
         
         // create array with the options
         NSMutableArray *dataArray = [NSMutableArray arrayWithCapacity:4];
@@ -430,9 +426,7 @@
         textField.hidden = NO;
         
         // this is needed in order to hide the text indicator on the text field
-        if (!IOS_PRE_7_0) {
-            textField.tintColor = [UIColor whiteColor];
-        }
+        textField.tintColor = [UIColor whiteColor];
         
         NSArray *tags = @[
                           @"None"
@@ -685,9 +679,7 @@
     }
     
     if (textField) {
-        if (!IOS_PRE_7_0) {
-            textField.tintColor = nil;
-        }
+        textField.tintColor = nil;
         
         textField.userInteractionEnabled = YES;
         textField.hidden = YES;
@@ -699,9 +691,7 @@
     if (segmentedControl) {
         segmentedControl.hidden = YES;
         
-        if (!IOS_PRE_7_0) {
-            segmentedControl.tintColor = [UIColor etPrimaryBlue];
-        }
+        segmentedControl.tintColor = [UIColor etPrimaryBlue];
     }
     
     /**

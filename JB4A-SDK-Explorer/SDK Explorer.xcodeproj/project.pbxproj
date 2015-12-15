@@ -13,16 +13,12 @@
 		4DD373EC19632DCF0005E6FF /* PUDCloudPageInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD373E919632DCF0005E6FF /* PUDCloudPageInboxViewController.m */; };
 		4DDDC875197D9C86009542E9 /* gibson.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4DDDC872197D9C86009542E9 /* gibson.gpx */; };
 		4DEB0AE2195DE31600790CEF /* PUDServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D71546A19183F820040A1CC /* PUDServiceProvider.m */; };
-		4DEB0AE3195DE31600790CEF /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57231919377AA5007B1464 /* AFNetworkReachabilityManager.m */; };
 		4DEB0AE4195DE31600790CEF /* PUDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5723581937E19F007B1464 /* PUDHomeViewController.m */; };
 		4DEB0AE5195DE31600790CEF /* PUDInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC4D67C1925B5BA00128F29 /* PUDInfoViewController.m */; };
 		4DEB0AE6195DE31600790CEF /* PUDMessageComposeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D71546119183EE60040A1CC /* PUDMessageComposeTableViewController.m */; };
-		4DEB0AE7195DE31600790CEF /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57232F19377AA5007B1464 /* JDStatusBarView.m */; };
 		4DEB0AE8195DE31600790CEF /* PUDDefaultMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D71546F191923AA0040A1CC /* PUDDefaultMessageModel.m */; };
 		4DEB0AE9195DE31600790CEF /* PUDFuelService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D71546719183F660040A1CC /* PUDFuelService.m */; };
 		4DEB0AEA195DE31600790CEF /* PUDDiscountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC4D6EE192A497900128F29 /* PUDDiscountTableViewController.m */; };
-		4DEB0AEB195DE31600790CEF /* PBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57233219377AA5007B1464 /* PBWebViewController.m */; };
-		4DEB0AEC195DE31600790CEF /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57232319377AA5007B1464 /* AFURLSessionManager.m */; };
 		4DEB0AED195DE31600790CEF /* PUDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2DE04A19105BB100B65B6F /* PUDConstants.m */; };
 		4DEB0AEE195DE31600790CEF /* PUDMessagePayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D651C53191D54AB000BAF5E /* PUDMessagePayload.m */; };
 		4DEB0AF0195DE31600790CEF /* PUDAppSettingConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEB0ADE195DC22900790CEF /* PUDAppSettingConstants.m */; };
@@ -32,24 +28,15 @@
 		4DEB0AF4195DE31600790CEF /* PUDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCFB93419227E4700BF96BB /* PUDTabBarController.m */; };
 		4DEB0AF6195DE31600790CEF /* PUDMessageReceivedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCFB92E192127CB00BF96BB /* PUDMessageReceivedTableViewController.m */; };
 		4DEB0AF7195DE31600790CEF /* UIColor+ExactTargetColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57232619377AA5007B1464 /* UIColor+ExactTargetColors.m */; };
-		4DEB0AF8195DE31600790CEF /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57232D19377AA5007B1464 /* JDStatusBarStyle.m */; };
-		4DEB0AF9195DE31600790CEF /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57232B19377AA5007B1464 /* JDStatusBarNotification.m */; };
 		4DEB0AFA195DE31600790CEF /* PUDPreferencesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2DE05419117CBA00B65B6F /* PUDPreferencesTableViewController.m */; };
 		4DEB0AFB195DE31600790CEF /* PUDPreferencesTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D667BAF19200DB90015BC2E /* PUDPreferencesTableData.m */; };
 		4DEB0AFC195DE31600790CEF /* PUDPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2180D719490A5C004F6095 /* PUDPageContentViewController.m */; };
 		4DEB0AFD195DE31600790CEF /* PUDPreferencesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D667BAC192005370015BC2E /* PUDPreferencesTableViewCell.m */; };
-		4DEB0AFE195DE31600790CEF /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57232119377AA5007B1464 /* AFURLResponseSerialization.m */; };
-		4DEB0AFF195DE31600790CEF /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57231219377AA5007B1464 /* AFHTTPRequestOperation.m */; };
-		4DEB0B00195DE31600790CEF /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57231D19377AA5007B1464 /* AFURLConnectionOperation.m */; };
-		4DEB0B01195DE31600790CEF /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57231419377AA5007B1464 /* AFHTTPRequestOperationManager.m */; };
 		4DEB0B02195DE31600790CEF /* PUDMessageComposeTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC426A81923AE9D002168F7 /* PUDMessageComposeTableData.m */; };
 		4DEB0B03195DE31600790CEF /* AFHTTPRequestOperationManager+AuthenticatedFuelRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D667B9F191D9BDD0015BC2E /* AFHTTPRequestOperationManager+AuthenticatedFuelRequest.m */; };
 		4DEB0B04195DE31600790CEF /* PUDDataPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC426AB1923ECF3002168F7 /* PUDDataPickerView.m */; };
 		4DEB0B05195DE31600790CEF /* PUDDiscountTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC4D6F1192A4AF700128F29 /* PUDDiscountTableData.m */; };
 		4DEB0B06195DE31600790CEF /* PUDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCFB93119227BD300BF96BB /* PUDNavigationController.m */; };
-		4DEB0B07195DE31600790CEF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57231F19377AA5007B1464 /* AFURLRequestSerialization.m */; };
-		4DEB0B08195DE31600790CEF /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57231B19377AA5007B1464 /* AFSecurityPolicy.m */; };
-		4DEB0B09195DE31600790CEF /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D57231619377AA5007B1464 /* AFHTTPSessionManager.m */; };
 		4DEB0B0A195DE31600790CEF /* PUDUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC4D67F1925C16000128F29 /* PUDUtility.m */; };
 		4DEB0B0B195DE31600790CEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2DE000191051BD00B65B6F /* main.m */; };
 		4DEB0B0D195DE31600790CEF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D95F14219256984002A5A43 /* MobileCoreServices.framework */; };
@@ -63,30 +50,13 @@
 		4DEB0B18195DE31600790CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2DE006191051BD00B65B6F /* Main.storyboard */; };
 		4DEC6D16196CDD4F00322A99 /* PUDCloudPageInboxDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC6D13196CDD4F00322A99 /* PUDCloudPageInboxDataSource.m */; };
 		4DEC6D1B196CE4A500322A99 /* PUDCloudPageInboxTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC6D18196CE4A500322A99 /* PUDCloudPageInboxTableViewCell.m */; };
+		6D01D74C1C185F2800B142CD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6D01D74B1C185F2800B142CD /* Podfile */; };
 		A99812E419B926DF00EA36EF /* PUDEulaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99812E319B926DF00EA36EF /* PUDEulaViewController.m */; };
-		EFE5F5951BBC764300195351 /* libJB4ASDK-4.0.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE5F5941BBC764300195351 /* libJB4ASDK-4.0.2.a */; };
+		B14551F0E242BEF08D3B2419 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B04F3712F324F269192920E9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00FF25C51AFD251300939035 /* ETBulkUpdateShim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETBulkUpdateShim.h; sourceTree = "<group>"; };
-		00FF25C61AFD251300939035 /* ETEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETEvent.h; sourceTree = "<group>"; };
-		00FF25C71AFD251300939035 /* ETFenceMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETFenceMessage.h; sourceTree = "<group>"; };
-		00FF25C81AFD251300939035 /* ETGenericUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETGenericUpdate.h; sourceTree = "<group>"; };
-		00FF25C91AFD251300939035 /* ETKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETKeyValueStore.h; sourceTree = "<group>"; };
-		00FF25CA1AFD251300939035 /* ETLandingPagePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLandingPagePresenter.h; sourceTree = "<group>"; };
-		00FF25CB1AFD251300939035 /* ETLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLocationManager.h; sourceTree = "<group>"; };
-		00FF25CC1AFD251300939035 /* ETLocationUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLocationUpdate.h; sourceTree = "<group>"; };
-		00FF25CD1AFD251300939035 /* ETMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMessage.h; sourceTree = "<group>"; };
-		00FF25CE1AFD251300939035 /* ETPhoneHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETPhoneHome.h; sourceTree = "<group>"; };
-		00FF25CF1AFD251300939035 /* ETPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETPush.h; sourceTree = "<group>"; };
-		00FF25D01AFD251300939035 /* ETRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETRegion.h; sourceTree = "<group>"; };
-		00FF25D11AFD251300939035 /* ETRegistration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETRegistration.h; sourceTree = "<group>"; };
-		00FF25D21AFD251300939035 /* ETSqliteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSqliteHelper.h; sourceTree = "<group>"; };
-		00FF25D31AFD251300939035 /* ETStatsUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETStatsUpdate.h; sourceTree = "<group>"; };
-		00FF25D41AFD251300939035 /* ETURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETURLConnection.h; sourceTree = "<group>"; };
-		00FF25D51AFD251300939035 /* ExactTargetEnhancedPushDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExactTargetEnhancedPushDataSource.h; sourceTree = "<group>"; };
-		00FF25D71AFD251300939035 /* PIEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEvent.h; sourceTree = "<group>"; };
-		00FF25D81AFD251300939035 /* PushConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushConstants.h; sourceTree = "<group>"; };
+		077D7E2AC2453BA2FE9360B7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3D06C957199B9ADB0085208E /* PUDBeaconsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUDBeaconsViewController.h; sourceTree = "<group>"; };
 		3D06C958199B9ADB0085208E /* PUDBeaconsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUDBeaconsViewController.m; sourceTree = "<group>"; };
 		3D91F0C8198AC52F00523DC6 /* SDK Explorer-Qa-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SDK Explorer-Qa-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -112,35 +82,8 @@
 		4D2DE04A19105BB100B65B6F /* PUDConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUDConstants.m; sourceTree = "<group>"; };
 		4D2DE05319117CBA00B65B6F /* PUDPreferencesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUDPreferencesTableViewController.h; sourceTree = "<group>"; };
 		4D2DE05419117CBA00B65B6F /* PUDPreferencesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUDPreferencesTableViewController.m; sourceTree = "<group>"; };
-		4D57231119377AA5007B1464 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		4D57231219377AA5007B1464 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		4D57231319377AA5007B1464 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
-		4D57231419377AA5007B1464 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
-		4D57231519377AA5007B1464 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		4D57231619377AA5007B1464 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		4D57231719377AA5007B1464 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		4D57231819377AA5007B1464 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		4D57231919377AA5007B1464 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		4D57231A19377AA5007B1464 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		4D57231B19377AA5007B1464 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		4D57231C19377AA5007B1464 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		4D57231D19377AA5007B1464 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		4D57231E19377AA5007B1464 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		4D57231F19377AA5007B1464 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		4D57232019377AA5007B1464 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		4D57232119377AA5007B1464 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		4D57232219377AA5007B1464 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		4D57232319377AA5007B1464 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		4D57232519377AA5007B1464 /* UIColor+ExactTargetColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ExactTargetColors.h"; sourceTree = "<group>"; };
 		4D57232619377AA5007B1464 /* UIColor+ExactTargetColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ExactTargetColors.m"; sourceTree = "<group>"; };
-		4D57232A19377AA5007B1464 /* JDStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarNotification.h; sourceTree = "<group>"; };
-		4D57232B19377AA5007B1464 /* JDStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarNotification.m; sourceTree = "<group>"; };
-		4D57232C19377AA5007B1464 /* JDStatusBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarStyle.h; sourceTree = "<group>"; };
-		4D57232D19377AA5007B1464 /* JDStatusBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarStyle.m; sourceTree = "<group>"; };
-		4D57232E19377AA5007B1464 /* JDStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarView.h; sourceTree = "<group>"; };
-		4D57232F19377AA5007B1464 /* JDStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarView.m; sourceTree = "<group>"; };
-		4D57233119377AA5007B1464 /* PBWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBWebViewController.h; sourceTree = "<group>"; };
-		4D57233219377AA5007B1464 /* PBWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBWebViewController.m; sourceTree = "<group>"; };
 		4D5723571937E19F007B1464 /* PUDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUDHomeViewController.h; sourceTree = "<group>"; };
 		4D5723581937E19F007B1464 /* PUDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUDHomeViewController.m; sourceTree = "<group>"; };
 		4D651C52191D54AB000BAF5E /* PUDMessagePayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUDMessagePayload.h; sourceTree = "<group>"; };
@@ -193,13 +136,12 @@
 		4DEC6D13196CDD4F00322A99 /* PUDCloudPageInboxDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUDCloudPageInboxDataSource.m; sourceTree = "<group>"; };
 		4DEC6D17196CE4A500322A99 /* PUDCloudPageInboxTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUDCloudPageInboxTableViewCell.h; sourceTree = "<group>"; };
 		4DEC6D18196CE4A500322A99 /* PUDCloudPageInboxTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUDCloudPageInboxTableViewCell.m; sourceTree = "<group>"; };
+		6B2289E172377280B8E21EBA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6D01D74B1C185F2800B142CD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A99812E219B926DF00EA36EF /* PUDEulaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUDEulaViewController.h; sourceTree = "<group>"; };
 		A99812E319B926DF00EA36EF /* PUDEulaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUDEulaViewController.m; sourceTree = "<group>"; };
+		B04F3712F324F269192920E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF95C6061AA9FAF600CFE56B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		EFE5F5941BBC764300195351 /* libJB4ASDK-4.0.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libJB4ASDK-4.0.2.a"; sourceTree = "<group>"; };
-		EFF0A8811AF152D000138F85 /* CHANGES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES.txt; sourceTree = "<group>"; };
-		EFF0A8821AF152D000138F85 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		EFF0A8831AF152D000138F85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,12 +149,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFE5F5951BBC764300195351 /* libJB4ASDK-4.0.2.a in Frameworks */,
 				4DA92C9E196D7F800005BC8E /* QuartzCore.framework in Frameworks */,
 				4DEB0B0D195DE31600790CEF /* MobileCoreServices.framework in Frameworks */,
 				4DEB0B0F195DE31600790CEF /* CoreGraphics.framework in Frameworks */,
 				4DEB0B11195DE31600790CEF /* UIKit.framework in Frameworks */,
 				4DEB0B12195DE31600790CEF /* Foundation.framework in Frameworks */,
+				B14551F0E242BEF08D3B2419 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +164,12 @@
 		4D2DDFE8191051BD00B65B6F = {
 			isa = PBXGroup;
 			children = (
+				6D01D74B1C185F2800B142CD /* Podfile */,
 				EF95C6061AA9FAF600CFE56B /* README.md */,
 				4D2DDFFA191051BD00B65B6F /* SDKExplorer */,
 				4D2DDFF3191051BD00B65B6F /* Frameworks */,
 				4D2DDFF2191051BD00B65B6F /* Products */,
+				594BB78DB21C840E2E884790 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +189,7 @@
 				4D2DDFF4191051BD00B65B6F /* Foundation.framework */,
 				4D2DDFF6191051BD00B65B6F /* CoreGraphics.framework */,
 				4D2DDFF8191051BD00B65B6F /* UIKit.framework */,
+				B04F3712F324F269192920E9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -321,11 +266,7 @@
 		4D2DE02D191051DC00B65B6F /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				4D57231019377AA5007B1464 /* AFNetworking */,
 				4D57232419377AA5007B1464 /* ETColors */,
-				4D57232719377AA5007B1464 /* etpushsdk */,
-				4D57232919377AA5007B1464 /* JDStatusBarNotification */,
-				4D57233019377AA5007B1464 /* PBWebViewController */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -378,36 +319,6 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
-		4D57231019377AA5007B1464 /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				EFF0A8811AF152D000138F85 /* CHANGES.txt */,
-				EFF0A8821AF152D000138F85 /* LICENSE */,
-				EFF0A8831AF152D000138F85 /* README.md */,
-				4D57231119377AA5007B1464 /* AFHTTPRequestOperation.h */,
-				4D57231219377AA5007B1464 /* AFHTTPRequestOperation.m */,
-				4D57231319377AA5007B1464 /* AFHTTPRequestOperationManager.h */,
-				4D57231419377AA5007B1464 /* AFHTTPRequestOperationManager.m */,
-				4D57231519377AA5007B1464 /* AFHTTPSessionManager.h */,
-				4D57231619377AA5007B1464 /* AFHTTPSessionManager.m */,
-				4D57231719377AA5007B1464 /* AFNetworking.h */,
-				4D57231819377AA5007B1464 /* AFNetworkReachabilityManager.h */,
-				4D57231919377AA5007B1464 /* AFNetworkReachabilityManager.m */,
-				4D57231A19377AA5007B1464 /* AFSecurityPolicy.h */,
-				4D57231B19377AA5007B1464 /* AFSecurityPolicy.m */,
-				4D57231C19377AA5007B1464 /* AFURLConnectionOperation.h */,
-				4D57231D19377AA5007B1464 /* AFURLConnectionOperation.m */,
-				4D57231E19377AA5007B1464 /* AFURLRequestSerialization.h */,
-				4D57231F19377AA5007B1464 /* AFURLRequestSerialization.m */,
-				4D57232019377AA5007B1464 /* AFURLResponseSerialization.h */,
-				4D57232119377AA5007B1464 /* AFURLResponseSerialization.m */,
-				4D57232219377AA5007B1464 /* AFURLSessionManager.h */,
-				4D57232319377AA5007B1464 /* AFURLSessionManager.m */,
-			);
-			name = AFNetworking;
-			path = Libraries/AFNetworking;
-			sourceTree = "<group>";
-		};
 		4D57232419377AA5007B1464 /* ETColors */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,58 +327,6 @@
 			);
 			name = ETColors;
 			path = Libraries/ETColors;
-			sourceTree = "<group>";
-		};
-		4D57232719377AA5007B1464 /* etpushsdk */ = {
-			isa = PBXGroup;
-			children = (
-				EFE5F5941BBC764300195351 /* libJB4ASDK-4.0.2.a */,
-				00FF25C51AFD251300939035 /* ETBulkUpdateShim.h */,
-				00FF25C61AFD251300939035 /* ETEvent.h */,
-				00FF25C71AFD251300939035 /* ETFenceMessage.h */,
-				00FF25C81AFD251300939035 /* ETGenericUpdate.h */,
-				00FF25C91AFD251300939035 /* ETKeyValueStore.h */,
-				00FF25CA1AFD251300939035 /* ETLandingPagePresenter.h */,
-				00FF25CB1AFD251300939035 /* ETLocationManager.h */,
-				00FF25CC1AFD251300939035 /* ETLocationUpdate.h */,
-				00FF25CD1AFD251300939035 /* ETMessage.h */,
-				00FF25CE1AFD251300939035 /* ETPhoneHome.h */,
-				00FF25CF1AFD251300939035 /* ETPush.h */,
-				00FF25D01AFD251300939035 /* ETRegion.h */,
-				00FF25D11AFD251300939035 /* ETRegistration.h */,
-				00FF25D21AFD251300939035 /* ETSqliteHelper.h */,
-				00FF25D31AFD251300939035 /* ETStatsUpdate.h */,
-				00FF25D41AFD251300939035 /* ETURLConnection.h */,
-				00FF25D51AFD251300939035 /* ExactTargetEnhancedPushDataSource.h */,
-				00FF25D71AFD251300939035 /* PIEvent.h */,
-				00FF25D81AFD251300939035 /* PushConstants.h */,
-			);
-			name = etpushsdk;
-			path = Libraries/etpushsdk;
-			sourceTree = "<group>";
-		};
-		4D57232919377AA5007B1464 /* JDStatusBarNotification */ = {
-			isa = PBXGroup;
-			children = (
-				4D57232A19377AA5007B1464 /* JDStatusBarNotification.h */,
-				4D57232B19377AA5007B1464 /* JDStatusBarNotification.m */,
-				4D57232C19377AA5007B1464 /* JDStatusBarStyle.h */,
-				4D57232D19377AA5007B1464 /* JDStatusBarStyle.m */,
-				4D57232E19377AA5007B1464 /* JDStatusBarView.h */,
-				4D57232F19377AA5007B1464 /* JDStatusBarView.m */,
-			);
-			name = JDStatusBarNotification;
-			path = Libraries/JDStatusBarNotification;
-			sourceTree = "<group>";
-		};
-		4D57233019377AA5007B1464 /* PBWebViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4D57233119377AA5007B1464 /* PBWebViewController.h */,
-				4D57233219377AA5007B1464 /* PBWebViewController.m */,
-			);
-			name = PBWebViewController;
-			path = Libraries/PBWebViewController;
 			sourceTree = "<group>";
 		};
 		4D667B9A191D9AA20015BC2E /* Categories */ = {
@@ -499,6 +358,15 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		594BB78DB21C840E2E884790 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				077D7E2AC2453BA2FE9360B7 /* Pods.debug.xcconfig */,
+				6B2289E172377280B8E21EBA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -506,9 +374,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DEB0B19195DE31600790CEF /* Build configuration list for PBXNativeTarget "SDK Explorer" */;
 			buildPhases = (
+				E0199C2E5888140E236C9C14 /* Check Pods Manifest.lock */,
 				4DEB0AE1195DE31600790CEF /* Sources */,
 				4DEB0B0C195DE31600790CEF /* Frameworks */,
 				4DEB0B13195DE31600790CEF /* Resources */,
+				D2C2014864273AB6C3C77882 /* Embed Pods Frameworks */,
+				1D9A9BE0BEE2C682105223D4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -526,7 +397,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PUD;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = ExactTarget;
 				TargetAttributes = {
 					4DEB0AE0195DE31600790CEF = {
@@ -569,11 +440,60 @@
 				4DEB0B15195DE31600790CEF /* Images.xcassets in Resources */,
 				4DEB0B16195DE31600790CEF /* InfoPlist.strings in Resources */,
 				4DEB0B17195DE31600790CEF /* fre3of9x.ttf in Resources */,
+				6D01D74C1C185F2800B142CD /* Podfile in Resources */,
 				4DEB0B18195DE31600790CEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D9A9BE0BEE2C682105223D4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2C2014864273AB6C3C77882 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0199C2E5888140E236C9C14 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4DEB0AE1195DE31600790CEF /* Sources */ = {
@@ -581,17 +501,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DEB0AE2195DE31600790CEF /* PUDServiceProvider.m in Sources */,
-				4DEB0AE3195DE31600790CEF /* AFNetworkReachabilityManager.m in Sources */,
 				4DEB0AE4195DE31600790CEF /* PUDHomeViewController.m in Sources */,
 				A99812E419B926DF00EA36EF /* PUDEulaViewController.m in Sources */,
 				4DEB0AE5195DE31600790CEF /* PUDInfoViewController.m in Sources */,
 				4DEB0AE6195DE31600790CEF /* PUDMessageComposeTableViewController.m in Sources */,
-				4DEB0AE7195DE31600790CEF /* JDStatusBarView.m in Sources */,
 				4DEB0AE8195DE31600790CEF /* PUDDefaultMessageModel.m in Sources */,
 				4DEB0AE9195DE31600790CEF /* PUDFuelService.m in Sources */,
 				4DEB0AEA195DE31600790CEF /* PUDDiscountTableViewController.m in Sources */,
-				4DEB0AEB195DE31600790CEF /* PBWebViewController.m in Sources */,
-				4DEB0AEC195DE31600790CEF /* AFURLSessionManager.m in Sources */,
 				4DEB0AED195DE31600790CEF /* PUDConstants.m in Sources */,
 				4DEB0AEE195DE31600790CEF /* PUDMessagePayload.m in Sources */,
 				4DEB0AF0195DE31600790CEF /* PUDAppSettingConstants.m in Sources */,
@@ -603,27 +519,18 @@
 				4DEB0AF4195DE31600790CEF /* PUDTabBarController.m in Sources */,
 				4DEB0AF6195DE31600790CEF /* PUDMessageReceivedTableViewController.m in Sources */,
 				4DEB0AF7195DE31600790CEF /* UIColor+ExactTargetColors.m in Sources */,
-				4DEB0AF8195DE31600790CEF /* JDStatusBarStyle.m in Sources */,
-				4DEB0AF9195DE31600790CEF /* JDStatusBarNotification.m in Sources */,
 				4DEB0AFA195DE31600790CEF /* PUDPreferencesTableViewController.m in Sources */,
 				4DEB0AFB195DE31600790CEF /* PUDPreferencesTableData.m in Sources */,
 				3D06C959199B9ADB0085208E /* PUDBeaconsViewController.m in Sources */,
 				4DEB0AFC195DE31600790CEF /* PUDPageContentViewController.m in Sources */,
 				4DEB0AFD195DE31600790CEF /* PUDPreferencesTableViewCell.m in Sources */,
-				4DEB0AFE195DE31600790CEF /* AFURLResponseSerialization.m in Sources */,
-				4DEB0AFF195DE31600790CEF /* AFHTTPRequestOperation.m in Sources */,
-				4DEB0B00195DE31600790CEF /* AFURLConnectionOperation.m in Sources */,
 				4DD373EC19632DCF0005E6FF /* PUDCloudPageInboxViewController.m in Sources */,
-				4DEB0B01195DE31600790CEF /* AFHTTPRequestOperationManager.m in Sources */,
 				4DEB0B02195DE31600790CEF /* PUDMessageComposeTableData.m in Sources */,
 				4DEB0B03195DE31600790CEF /* AFHTTPRequestOperationManager+AuthenticatedFuelRequest.m in Sources */,
 				4DEB0B04195DE31600790CEF /* PUDDataPickerView.m in Sources */,
 				4DEC6D1B196CE4A500322A99 /* PUDCloudPageInboxTableViewCell.m in Sources */,
 				4DEB0B05195DE31600790CEF /* PUDDiscountTableData.m in Sources */,
 				4DEB0B06195DE31600790CEF /* PUDNavigationController.m in Sources */,
-				4DEB0B07195DE31600790CEF /* AFURLRequestSerialization.m in Sources */,
-				4DEB0B08195DE31600790CEF /* AFSecurityPolicy.m in Sources */,
-				4DEB0B09195DE31600790CEF /* AFHTTPSessionManager.m in Sources */,
 				4DEB0B0A195DE31600790CEF /* PUDUtility.m in Sources */,
 				4DEB0B0B195DE31600790CEF /* main.m in Sources */,
 			);
@@ -670,6 +577,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -677,7 +585,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "QA=1";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"QA=1",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -685,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -720,7 +631,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -729,6 +640,7 @@
 		};
 		4DEB0B1A195DE31600790CEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 077D7E2AC2453BA2FE9360B7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALTERNATE_GROUP = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -747,19 +659,21 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"SQLITE_HAS_CODEC=1",
 					"QA=1",
+					"$(inherited)",
 				);
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "$(inherited)";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SDK Explorer-Qa-Info.plist";
 				INSTALL_GROUP = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PublicDemo",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/PublicDemo/Libraries/etpushsdk",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.use_your_own_bundleid;
 				PRODUCT_NAME = "SDK Explorer-Qa";
 				PROVISIONING_PROFILE = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -769,6 +683,7 @@
 		};
 		4DEB0B1B195DE31600790CEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2289E172377280B8E21EBA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALTERNATE_GROUP = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -784,19 +699,23 @@
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PublicDemo/SDK Explorer-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = "SQLITE_HAS_CODEC=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"SQLITE_HAS_CODEC=1",
+					"$(inherited)",
+				);
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "QA=1";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SDK Explorer-Qa-Info.plist";
 				INSTALL_GROUP = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PublicDemo",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/PublicDemo/Libraries/etpushsdk",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.use_your_own_bundleid;
 				PRODUCT_NAME = "SDK Explorer-Qa";
 				PROVISIONING_PROFILE = "";
 				VERSIONING_SYSTEM = "apple-generic";

@@ -66,9 +66,6 @@
      */
     CGFloat heightDifference = 49;
     
-    if (IOS_PRE_7_0) {
-        heightDifference = 0;
-    }
     
     /**
      *  Change size of page view controller
@@ -95,15 +92,7 @@
     /**
      *  Add the buttonView to the screen
      */
-    if (IOS_PRE_7_0) {
-        CGRect newFrame = self.buttonView.frame;
-        newFrame.origin.y = 0;
-        self.buttonView.frame = newFrame;
-        [self.view addSubview:self.buttonView];
-    }
-    else {
-        [self.pageViewController.view addSubview:self.buttonView];
-    }
+    [self.pageViewController.view addSubview:self.buttonView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

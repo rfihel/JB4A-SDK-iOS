@@ -71,19 +71,19 @@ NSString *messageContactURLString = @"https://www.exacttargetapis.com/push/v1/me
     
     NSString *urlString = [NSString stringWithFormat:messageContactURLString, messageId];
     
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     
     [manager fuelRequestWithMethod:@"POST"
                    numberOfRetries:1
                          URLString:urlString
                         parameters:[payload serializableDictionary]
-                           success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                           success:^(NSURLSessionTask *operation, id responseObject) {
                                NSLog(@"== API SUCCESS ==");
                                if (success) {
                                    success(responseObject);
                                }
-                           } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                           } failure:^(NSURLSessionTask *operation, NSError *error) {
                                NSLog(@"== API FAILED ==\n\n%@\n\n%@\n\n", operation.description, error);
                                if (failure) {
                                    failure(error);
