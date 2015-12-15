@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JB4A-SDK"
-  s.version          = "4.0.3.1"
+  s.version          = "4.0.3.2"
   s.summary          = "Salesforce Marketing Cloud Journey Builder for Apps iOS SDK"
 
   s.description      = <<-DESC
@@ -17,9 +17,10 @@ DESC
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'JB4A-SDK/*.*'
+  s.source_files = 'JB4A-SDK/*.h'
 
   s.public_header_files = 'JB4A-SDK/*.h'
   s.ios.vendored_library = 'JB4A-SDK/libJB4ASDK-4.0.3.a'
+  s.ios.framework = 'CoreLocation'
 end
 
